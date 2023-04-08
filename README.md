@@ -1,13 +1,3 @@
-# a1
-
-part 0
-
-
-part 1
-
-
-part 2
-
 The program utilizes advanced image processing techniques to extract musical notes hidden within an image. Before running the code, it is necessary to ensure that all the required libraries and dependencies are installed, such as Pillow, NumPy and Numba (for faster execution). Once installed, the code can be executed and the image containing musical notes can be uploaded for analysis.
 
 The program's note extraction process involves identifying the treble and bass clefs using the Hough transform feature detection technique. The program assumes that the lines representing the clefs are horizontally positioned at 0 degrees. The program calculates the number of white and black pixels for each row in the image and considers a row a line if it has more black pixels than white. It checks for any rows that are too far apart and sorts them by position in the image, locating the first position on the treble clef. The program ensures that the first position on the bass clef is located on a row that is at least 50 units away from the previous row. This process continues until all the positions for the treble and bass clefs are located. The program also calculates the distance between the lines to know at what height to reshape the template image.
@@ -23,7 +13,6 @@ Before non-max suppression:
 After non-max suppression:
 
  
-
 
 The program extracted notes from the image by determining the pitch of each note based on its corresponding clef. This was achieved by establishing the minimum distance between the note's position and the clef's position. Once the clef was established, a predefined dictionary was referenced to determine the note's pitch based on the units it was away from the clef. The pitch and location details of the notes were then displayed using a font downloaded from Google (https://fonts.google.com/specimen/Roboto), which created visually captivating results. 
 
