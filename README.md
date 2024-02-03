@@ -10,11 +10,15 @@ The initial step involved identifying the clefs and exploring the grayscale feat
 
 Before non-max suppression:
 
- ![plot](detected.png)
+![image](https://github.com/nileshrathi99/OMR/assets/32071800/e6973249-1290-4600-90fe-e596d18756e0)
+
 
 After non-max suppression:
 
- 
+![image](https://github.com/nileshrathi99/OMR/assets/32071800/f93952ec-4e52-416d-a5f0-d0eec367f243)
+
+
+
 
 The program extracted notes from the image by determining the pitch of each note based on its corresponding clef. This was achieved by establishing the minimum distance between the note's position and the clef's position. Once the clef was established, a predefined dictionary was referenced to determine the note's pitch based on the units it was away from the clef. The pitch and location details of the notes were then displayed using a font downloaded from Google (https://fonts.google.com/specimen/Roboto), which created visually captivating results. 
 
@@ -25,4 +29,12 @@ To improve the program, machine learning algorithms could be implemented to trai
  
 
 In the future, our program could be improved by implementing machine learning algorithms to train the model on various music genres, allowing for more accurate note extraction. We could also work on improving the pitch detection algorithm to handle more complex note arrangements. Such as we can detect the connecting components and remove it from being considered as a possible location of a note, Despite its limitations, we believe our program is a unique approach to extracting musical notes from images.
+
+
+![music1](https://github.com/nileshrathi99/OMR/assets/32071800/7ab1a754-102f-4893-b25e-b7ce77d77ed3)
+
+
+![detected](https://github.com/nileshrathi99/OMR/assets/32071800/e9c3bc4d-73e3-490f-840a-c3a981411041)
+
+
 
